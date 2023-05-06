@@ -71,7 +71,13 @@ const reverse = words.split('').reverse().join('')
 console.log(reverse)
 
 
-/*En JavaScript, las cadenas "son inmutables", lo que significa que no se pueden modificar directamente. Por lo tanto, para invertir el orden de los caracteres de una cadena, es necesario primero convertirla en un arreglo de caracteres individuales utilizando el método split('')( [ 'n', 'o', 'e', 'l' ] ). Una vez que se tiene el arreglo de caracteres, se puede utilizar el método reverse para invertir el orden de sus elementos y luego el método join('') para unir los caracteres en una nueva cadena invertida. si a join le paso un argumento como la coma los unirá con comas.*/
+/*En JavaScript, las cadenas "son inmutables", lo que significa que no se pueden modificar directamente.
+Por lo tanto, para invertir el orden de los caracteres de una cadena, es necesario primero convertirla 
+en un arreglo de caracteres individuales utilizando el método split('')( [ 'n', 'o', 'e', 'l' ] ). 
+Una vez que se tiene el arreglo de caracteres, se puede utilizar el método reverse para invertir el orden
+de sus elementos y luego el método join('') para unir los caracteres en una nueva cadena invertida.
+si a join le paso un argumento como la coma los unirá con comas.
+*/
 
 
 
