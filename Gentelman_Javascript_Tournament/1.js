@@ -14,6 +14,14 @@ console.log(Math.max(...[1,2,3]))
 al usar el spread operator estamos expandiendo el array en una lista de argumentos. console.log(Math.max(1, 2, 3));
 */
 
+/*
+Math.max() es un método estático de la clase Math, lo que significa que se puede llamar directamente en la clase Math
+sin tener que crear una instancia de la misma. Por lo tanto, se coloca antes del contenido al que se le quiere aplicar la función.
+Por otro lado, el método slice() es un método de instancia de la clase Array, lo que significa que se debe llamar en una instancia
+de un array. Por lo tanto, se coloca después del array al que se le quiere aplicar la función.
+En resumen, la diferencia en la sintaxis se debe a que Math.max() es un método estático mientras que slice() es un método de instancia.
+
+*/
 
 /*___________________________________________________________________________________________________*/
 /*___________________________________________________________________________________________________*/
