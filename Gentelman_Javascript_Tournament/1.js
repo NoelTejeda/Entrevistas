@@ -7,8 +7,13 @@ const mayor = [1, 2, 3].reduce((acc, actual) =>
 console.log(mayor) //3
 
 
-// otra manera de solucionarlo es:
+// otra manera de solucionarlo es utilizando el operador de propagacion directamente al array:
 console.log(Math.max(...[1,2,3]))
+
+//Otra manera:
+
+const array = [1,2,3,4]
+console.log (Math.max(...array))
 
 /* se usa el operador de propagación (...) para pasar los elementos del array como argumentos a la función Math.max
 al usar el spread operator estamos expandiendo el array en una lista de argumentos. console.log(Math.max(1, 2, 3));
@@ -32,7 +37,13 @@ En resumen, la diferencia en la sintaxis se debe a que Math.max() es un método 
 const suma = [1, 2, 3, 4].slice(2).reduce((acumulador, valorActual) => acumulador + valorActual)
 console.log(suma);
 
-/* slice se usa con indice inicial , indice final(no incluido, se incluye el indice anterior), si no 
+//otra manera:
+const array1 = [1,2,3,4]
+console.log(array1.slice(2).reduce((acc,act)=>acc+act))
+
+/*
+
+slice se usa con indice inicial , indice final(no incluido, se incluye el indice anterior), si no 
 se le coloca indice final se sobreentiende que seria todo el array */
 
 
@@ -93,19 +104,32 @@ si a join le paso un argumento como la coma los unirá con comas.
 /*___________________________________________________________________________________________________*/
 
 
+
 // 6-Dado un string, escribir una función que encuentre la palabra más larga en el string.
 const resultLonger = "hola mundo"
   .split(" ")
   .reduce((acc, element) => (element.length > acc.length ? element : acc));
+
+  
+/*___________________________________________________________________________________________________*/
+/*___________________________________________________________________________________________________*/
   
 // 7-Dado un string y un número n, escribir una función que trunque el string a n caracteres y agregue "..." al final.
 const n = 5;
 const truncatedResult =  "hola gentleman programming".slice(0, n);
 const truncatedText = truncatedResult.length < n ? truncatedResult : `${truncatedResult}...`;
 
+
+/*___________________________________________________________________________________________________*/
+/*___________________________________________________________________________________________________*/
+
 // 8-Dado un array de números, escribir una función que elimine todos los números duplicados y devuelva el array resultante sin duplicados.
 const setOfArray = new Set();
 [1, 1, 1, 1, 2].forEach((n) => setOfArray.add(n));
+
+
+/*___________________________________________________________________________________________________*/
+/*___________________________________________________________________________________________________*/
 
 // 9-Dado un array de números y un número objetivo, escribir una función que encuentre dos números en el array que sumen el número objetivo.
 const checkNumbers = (arrayOfNumbers, n) => {
@@ -121,4 +145,46 @@ const checkNumbers = (arrayOfNumbers, n) => {
 };
 const test = checkNumbers([1, 2, 3], 3);
 
+/*___________________________________________________________________________________________________*/
+/*___________________________________________________________________________________________________*/
 
+
+// Get the value "Volvo" from the cars array.
+const cars = ["Saab", "Volvo", "BMW"]
+
+
+
+/*___________________________________________________________________________________________________*/
+/*___________________________________________________________________________________________________*/
+
+// Change the first item of cars to "Ford".
+const cars1 = ["Volvo", "Jeep", "Mercedes"]
+
+
+/*___________________________________________________________________________________________________*/
+/*___________________________________________________________________________________________________*/
+
+
+/* Alert the number of items in an array, using 
+the correct Array property. */
+
+/*___________________________________________________________________________________________________*/
+/*___________________________________________________________________________________________________*/
+
+/* Programa una función que dada una String te devuelva un 
+Array de textos separados por cierto caracter,
+ pe. miFuncion('hola que tal', ' ') 
+ devolverá ['hola', 'que', 'tal'].
+  */
+
+ const cadenaAArreglo = (cadena = "", separador = undefined) =>
+ (!cadena)
+   ? console.warn('No ingresaste ninguna cadena de texto')
+   : (separador === undefined)
+     ? console.warn('No ingresaste el caracter separador')
+     : console.info(cadena.split(separador,))
+
+cadenaAArreglo("lorem22", "")
+
+/*___________________________________________________________________________________________________*/
+/*___________________________________________________________________________________________________*/
