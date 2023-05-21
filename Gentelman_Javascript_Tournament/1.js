@@ -20,9 +20,9 @@ al usar el spread operator estamos expandiendo el array en una lista de argument
 */
 
 /*
-Math.max() es un método estático de la clase Math, lo que significa que se puede llamar directamente en la clase Math
+Math.max() es un MÉTODO ESTÁTICO de la clase Math, lo que significa que se puede llamar directamente en la clase Math
 sin tener que crear una instancia de la misma. Por lo tanto, se coloca antes del contenido al que se le quiere aplicar la función.
-Por otro lado, el método slice() es un método de instancia de la clase Array, lo que significa que se debe llamar en una instancia
+Por otro lado, el método slice() es un MÉTODO DE INSTANCIA de la clase Array, lo que significa que se debe llamar en una instancia
 de un array. Por lo tanto, se coloca después del array al que se le quiere aplicar la función.
 En resumen, la diferencia en la sintaxis se debe a que Math.max() es un método estático mientras que slice() es un método de instancia.
 
@@ -44,7 +44,13 @@ console.log(array1.slice(2).reduce((acc,act)=>acc+act))
 /*
 
 slice se usa con indice inicial , indice final(no incluido, se incluye el indice anterior), si no 
-se le coloca indice final se sobreentiende que seria todo el array */
+se le coloca indice final se sobreentiende que seria todo el array 
+
+también se puede usar el método splice, pero la diferencia es que este último modifica el array original
+
+
+
+*/
 
 
 /*___________________________________________________________________________________________________*/
@@ -55,7 +61,7 @@ se le coloca indice final se sobreentiende que seria todo el array */
 
 console.log([1,2,3,4].reduce((acc,act)=>acc+act))
 
-/*si quisiera que empezara a sumar por un número que yo quiera se haria así:
+/*si quisiera que empezara a sumar por un número(no indice) que yo quiera se haria así:
 
 console.log([1,2,3,4].reduce((acc,act)=>acc+act,2))
 */
@@ -97,7 +103,12 @@ Una vez que se tiene el arreglo de caracteres, se puede utilizar el método reve
 de sus elementos y luego el método join('') para unir los caracteres en una nueva cadena invertida.
 si a join le paso un argumento como la coma los unirá con comas.
 */
-
+/*
+el método split usa dos argumentos, el primero es el tipo de separador y el segundo es la cantidad  ejemplo:
+const str = 'one two three';
+console.log(str.split(' ')); // ['one', 'two', 'three']
+console.log(str.split(' ', 2)); // ['one', 'two']
+*/
 
 
 /*___________________________________________________________________________________________________*/
