@@ -4,9 +4,7 @@ Serie de ejercicios para prácticar para las entrevistas
 
 // 2 -dado un array de numeros, escribir una función que sume los todos indices empezando por el indice 2
 
-
 // 3-Dado un array de números, escribir una función que calcule la suma de todos los elementos.
-
 
 // 4-Dado un array de números, escribir una función que calcule el promedio de todos los elementos.
 
@@ -14,9 +12,11 @@ Serie de ejercicios para prácticar para las entrevistas
 
 // 6-Dado un string, escribir una función que encuentre la palabra más larga en el string.
 
-// 7-Dado un string y un número n, escribir una función que trunque el string a n caracteres y agregue "..." al final.
+// 7-Dado un string con muchas palabras ejemplo (const resultLonger = 'hola  mundo  estoy  preparado'), escribir una función que extraiga la segunda palabra.
 
-// 8-Dado un array de números, escribir una función que elimine todos los números duplicados y devuelva el array resultante sin duplicados.
+// 8-Dado un string y un número n, escribir una función que trunque el string a n caracteres y agregue "..." al final.
+
+// 9-Dado un array de números, escribir una función que elimine todos los números duplicados y devuelva el array resultante sin duplicados.
 
 // Get the value "Volvo" from the cars array.
 const cars = ["Saab", "Volvo", "BMW"]
