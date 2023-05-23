@@ -114,18 +114,32 @@ console.log(str.split(' ', 2)); // ['one', 'two']
 /*___________________________________________________________________________________________________*/
 /*___________________________________________________________________________________________________*/
 
-
-
 // 6-Dado un string, escribir una función que encuentre la palabra más larga en el string.
-const resultLonger = "hola mundo"
-  .split(" ")
-  .reduce((acc, element) => (element.length > acc.length ? element : acc));
+const resultLonger = 'hola  mundo  estoy  preparado'
+console.log(resultLonger.split(" ").reduce((acc, act) => 
+(acc.length > act.length ? acc : act)))
 
-  
+ /*
+ la diferencia de usar
+ sin espacio split('') = ["h", "o", "l", "a", " ", "m", "u", ...]
+ con espacio split(' ') = ["hola", "mundo", "estoy", "preparad...]
+ 
+ ternaria:
+ condicion ? cuando es cierto : cuando es falso
+ puntaje>6 ? 'pasaste' : 'fallaste'
+ 
+ */
+/*___________________________________________________________________________________________________*/
+/*___________________________________________________________________________________________________*/
+
+// 7-Dado un string con muchas palabras ejemplo (const resultLonger = 'hola  mundo  estoy  preparado'), escribir una función que extraiga la segunda palabra.
+const resultLonger = 'hola mundo estoy preparado'
+console.log(resultLonger.split(' ')[3]) //preparado
+
 /*___________________________________________________________________________________________________*/
 /*___________________________________________________________________________________________________*/
   
-// 7-Dado un string y un número n, escribir una función que trunque el string a n caracteres y agregue "..." al final.
+// 8-Dado un string y un número n, escribir una función que trunque el string a n caracteres y agregue "..." al final.
 const n = 5;
 const truncatedResult =  "hola gentleman programming".slice(0, n);
 const truncatedText = truncatedResult.length < n ? truncatedResult : `${truncatedResult}...`;
@@ -134,7 +148,7 @@ const truncatedText = truncatedResult.length < n ? truncatedResult : `${truncate
 /*___________________________________________________________________________________________________*/
 /*___________________________________________________________________________________________________*/
 
-// 8-Dado un array de números, escribir una función que elimine todos los números duplicados y devuelva el array resultante sin duplicados.
+// 9-Dado un array de números, escribir una función que elimine todos los números duplicados y devuelva el array resultante sin duplicados.
 const setOfArray = new Set();
 [1, 1, 1, 1, 2].forEach((n) => setOfArray.add(n));
 
@@ -142,7 +156,7 @@ const setOfArray = new Set();
 /*___________________________________________________________________________________________________*/
 /*___________________________________________________________________________________________________*/
 
-// 9-Dado un array de números y un número objetivo, escribir una función que encuentre dos números en el array que sumen el número objetivo.
+// 10-Dado un array de números y un número objetivo, escribir una función que encuentre dos números en el array que sumen el número objetivo.
 const checkNumbers = (arrayOfNumbers, n) => {
   let secondNumber = null;
   const result = arrayOfNumbers.find((e, index) =>
