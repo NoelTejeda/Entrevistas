@@ -115,7 +115,7 @@ console.log(str.split(' ', 2)); // ['one', 'two']
 /*___________________________________________________________________________________________________*/
 
 // 6-Dado un string, escribir una función que encuentre la palabra más larga en el string.
-const resultLonger = 'hola  mundo  estoy  preparado'
+const resultLonger = 'hola mundo estoy preparado'
 console.log(resultLonger.split(" ").reduce((acc, act) => 
 (acc.length > act.length ? acc : act)))
 
@@ -133,8 +133,9 @@ console.log(resultLonger.split(" ").reduce((acc, act) =>
 /*___________________________________________________________________________________________________*/
 
 // 7-Dado un string con muchas palabras ejemplo (const resultLonger = 'hola  mundo  estoy  preparado'), escribir una función que extraiga la segunda palabra.
-const resultLonger = 'hola mundo estoy preparado'
-console.log(resultLonger.split(' ')[3]) //preparado
+
+const words1 = 'hola mundo estoy preparado'
+console.log(words1.split(' ')[3]) //preparado
 
 /*___________________________________________________________________________________________________*/
 /*___________________________________________________________________________________________________*/
