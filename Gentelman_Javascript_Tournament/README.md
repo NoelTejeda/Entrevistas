@@ -18,14 +18,29 @@ Serie de ejercicios para prácticar para las entrevistas
 
 // 9-Dado un array de números, escribir una función que elimine todos los números duplicados y devuelva el array resultante sin duplicados.
 
-// Get the value "Volvo" from the cars array.
+// 10- Get the value "Volvo" from the cars array.
 const cars = ["Saab", "Volvo", "BMW"]
 
-// Change the first item of cars to "Ford".
+// 11- Change the first item of cars to "Ford".
 const cars1 = ["Volvo", "Jeep", "Mercedes"]
 
 
-// Programa una función que dada una String te devuelva un 
+/* 12- programa una función que dada una String te devuelva un 
 Array de textos separados por cierto caracter,
  pe. miFuncion('hola que tal', ' ') 
  devolverá ['hola', 'que', 'tal'].
+  */
+
+// 13- Dada una lista de números, escribe una función en JavaScript que devuelva la suma de todos los números pares en la lista. La función deberá iterar sobre cada número en la lista, comprobar si el número es par y, si es así, añadirlo a la suma total. Usa el bucle que quieras para solucionarlo.
+
+function sumarPares(numeros) {
+  let suma = 0
+  // tu código aquí
+  return suma
+}
+
+// 14- crear un array vacio e insertar los números del 1 al 10
+
+// 15- dado el siguiente array ['Banana', 'Orange', 'Apple'], eliminar en último indice y devolver el array nuevo.
+
+// 16- dado el siguiente array ['banana', 'orange', 'apple', 'kiwi'] mostrar los indices 1 y 2 en un solo array

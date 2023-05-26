@@ -157,25 +157,8 @@ const setOfArray = new Set();
 /*___________________________________________________________________________________________________*/
 /*___________________________________________________________________________________________________*/
 
-// 10-Dado un array de números y un número objetivo, escribir una función que encuentre dos números en el array que sumen el número objetivo.
-const checkNumbers = (arrayOfNumbers, n) => {
-  let secondNumber = null;
-  const result = arrayOfNumbers.find((e, index) =>
-    arrayOfNumbers.slice(index).find((element2) => {
-      const isTrue = element2 + e === n;
-      if (isTrue) secondNumber = element2;
-      return isTrue;
-    })
-  );
-  return {result, secondNumber};
-};
-const test = checkNumbers([1, 2, 3], 3);
 
-/*___________________________________________________________________________________________________*/
-/*___________________________________________________________________________________________________*/
-
-
-// Get the value "Volvo" from the cars array.
+// 10 -Get the value "Volvo" from the cars array.
 const cars = ["Saab", "Volvo", "BMW"]
 
 
@@ -183,21 +166,17 @@ const cars = ["Saab", "Volvo", "BMW"]
 /*___________________________________________________________________________________________________*/
 /*___________________________________________________________________________________________________*/
 
-// Change the first item of cars to "Ford".
+//11- Change the first item of cars1 to "Ford".
 const cars1 = ["Volvo", "Jeep", "Mercedes"]
+cars1[0]='ford'
+console.log(cars1)
 
 
 /*___________________________________________________________________________________________________*/
 /*___________________________________________________________________________________________________*/
 
 
-/* Alert the number of items in an array, using 
-the correct Array property. */
-
-/*___________________________________________________________________________________________________*/
-/*___________________________________________________________________________________________________*/
-
-/* Programa una función que dada una String te devuelva un 
+/* 12- programa una función que dada una String te devuelva un 
 Array de textos separados por cierto caracter,
  pe. miFuncion('hola que tal', ' ') 
  devolverá ['hola', 'que', 'tal'].
@@ -214,3 +193,46 @@ cadenaAArreglo("lorem22", "")
 
 /*___________________________________________________________________________________________________*/
 /*___________________________________________________________________________________________________*/
+
+// 13- Dada una lista de números, escribe una función en JavaScript que devuelva la suma de todos los números pares en la lista. La función deberá iterar sobre cada número en la lista, comprobar si el número es par y, si es así, añadirlo a la suma total. Usa el bucle que quieras para solucionarlo.
+
+let numeros = [1,2,3,4,5]
+function sumarPares(numeros) {
+  let suma = 0;
+  for (let i = 0; i < numeros.length; i++) {
+    if (numeros[i] % 2 === 0) {
+      suma += numeros[i];
+    }
+  }
+  return suma;
+}
+console.log(sumarPares(numeros))
+
+/*___________________________________________________________________________________________________*/
+/*___________________________________________________________________________________________________*/
+
+// 14- crear un array vacio e insertar los números del 1 al 10
+
+let insert = []
+ for (let i = 1; i < 11 ; i++){
+  insert.push(i)
+ }
+ console.log(insert)
+
+ /*___________________________________________________________________________________________________*/
+/*___________________________________________________________________________________________________*/
+
+// 15- dado el siguiente array ['Banana', 'Orange', 'Apple'], eliminar en último indice y devolver el array nuevo.
+
+const fruits = ['Banana', 'Orange', 'Apple']
+console.log(fruits.pop())
+console.log(fruits)
+
+ /*___________________________________________________________________________________________________*/
+/*___________________________________________________________________________________________________*/
+
+// 16- dado el siguiente array ['banana', 'orange', 'apple', 'kiwi'] mostrar los indices 1 y 2 en un solo array
+
+const fruits1 = ['banana', 'orange', 'apple', 'kiwi']
+console.log(fruits1.splice(1,2))
+console.log(fruits1)
