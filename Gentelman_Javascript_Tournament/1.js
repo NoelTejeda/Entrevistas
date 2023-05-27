@@ -137,6 +137,11 @@ console.log(resultLonger.split(" ").reduce((acc, act) =>
 const words1 = 'hola mundo estoy preparado'
 console.log(words1.split(' ')[3]) //preparado
 
+/*
+debido a que el método split divide la cadena en un array, se puede acceder a los valores del array colocandolo
+entre corchetes.
+*/
+
 /*___________________________________________________________________________________________________*/
 /*___________________________________________________________________________________________________*/
   
