@@ -41,6 +41,19 @@ function sumarPares(numeros) {
 
 // 14- crear un array vacio e insertar los números del 1 al 10
 
-// 15- dado el siguiente array ['Banana', 'Orange', 'Apple'], eliminar en último indice y devolver el array nuevo.
+// 15- dado el siguiente array ['Banana', 'Orange', 'Apple'], agrega el elemento "tomato" en el primer indice
 
-// 16- dado el siguiente array ['banana', 'orange', 'apple', 'kiwi'] mostrar los indices 1 y 2 en un solo array
+
+// 16- dado el siguiente array ['Banana', 'Orange', 'Apple'], eliminar en último indice y devolver el array nuevo.
+
+// 17- dado el siguiente array ['Banana', 'Orange', 'Apple'], eliminar el primer indice y devuelvelo, imprime el array original.
+
+// 18- dado el siguiente array ['banana', 'orange', 'apple', 'kiwi'] mostrar los indices 1 y 2 en un solo array
+
+// 19- Genere números aleatorios del 1 al 10 
+
+// 20- crea una funcion que reciba dos parametros y puedas usar esa función para sumar dos numeros
+
+
+
+

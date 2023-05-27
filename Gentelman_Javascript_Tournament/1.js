@@ -148,7 +148,7 @@ entre corchetes.
 // 8-Dado un string y un número n, escribir una función que trunque el string a n caracteres y agregue "..." al final.
 const n = 5;
 const truncatedResult =  "hola gentleman programming".slice(0, n);
-const truncatedText = truncatedResult.length < n ? truncatedResult : `${truncatedResult}...`;
+const truncatedText = truncatedResult.length < n ? truncatedResult : `${truncatedResult}...`
 
 
 /*___________________________________________________________________________________________________*/
@@ -156,7 +156,7 @@ const truncatedText = truncatedResult.length < n ? truncatedResult : `${truncate
 
 // 9-Dado un array de números, escribir una función que elimine todos los números duplicados y devuelva el array resultante sin duplicados.
 const setOfArray = new Set();
-[1, 1, 1, 1, 2].forEach((n) => setOfArray.add(n));
+[1, 1, 1, 1, 2].forEach((n) => setOfArray.add(n))
 
 
 /*___________________________________________________________________________________________________*/
@@ -206,10 +206,10 @@ function sumarPares(numeros) {
   let suma = 0;
   for (let i = 0; i < numeros.length; i++) {
     if (numeros[i] % 2 === 0) {
-      suma += numeros[i];
+      suma += numeros[i]
     }
   }
-  return suma;
+  return suma
 }
 console.log(sumarPares(numeros))
 
@@ -227,17 +227,91 @@ let insert = []
  /*___________________________________________________________________________________________________*/
 /*___________________________________________________________________________________________________*/
 
-// 15- dado el siguiente array ['Banana', 'Orange', 'Apple'], eliminar en último indice y devolver el array nuevo.
+// 15- dado el siguiente array ['Banana', 'Orange', 'Apple'], agrega el elemento "tomato" en el primer indice
+
+const add = ['Banana', 'Orange', 'Apple']
+add.unshift('tomato')
+console.log(add)
+
+
+
+//El método .unshift() añade un elemento al principio de un array. a diferencia de push que lo agrega al final
+ /*___________________________________________________________________________________________________*/
+/*___________________________________________________________________________________________________*/
+
+// 16- dado el siguiente array ['Banana', 'Orange', 'Apple'], eliminar en último indice y devolver el array nuevo.
 
 const fruits = ['Banana', 'Orange', 'Apple']
 console.log(fruits.pop())
 console.log(fruits)
 
+//El método .pop() elimina y devuelve el último elemento de un array:
+
  /*___________________________________________________________________________________________________*/
 /*___________________________________________________________________________________________________*/
 
-// 16- dado el siguiente array ['banana', 'orange', 'apple', 'kiwi'] mostrar los indices 1 y 2 en un solo array
+// 17- dado el siguiente array ['Banana', 'Orange', 'Apple'], eliminar el primer indice y devuelvelo, imprime el array original.
+const frutas = ['Banana', 'Orange', 'Apple']
+console.log(frutas.shift())
+console.log(frutas)
+
+//El método .shift() elimina y devuelve el primer elemento de un array, mientras que pop elimina el último
+ /*___________________________________________________________________________________________________*/
+/*___________________________________________________________________________________________________*/
+
+// 18- dado el siguiente array ['banana', 'orange', 'apple', 'kiwi'] mostrar los indices 1 y 2 en un solo array
 
 const fruits1 = ['banana', 'orange', 'apple', 'kiwi']
 console.log(fruits1.splice(1,2))
+
 console.log(fruits1)
+
+/*___________________________________________________________________________________________________*/
+/*___________________________________________________________________________________________________*/
+
+// 19- Genere números aleatorios del 1 al 10 
+
+function getRandomNumber() {
+  
+  const random = Math.random() // por ejemplo: 0.6803487380457318
+  const multiplied = random * 10 // -> 6.803487380457318
+  const rounded = Math.floor(multiplied) // -> 6
+  const result = rounded + 1 // -> 7
+ 
+  return result
+}
+console.log(getRandomNumber())
+
+/*
+recuperamos un número aleatorio entre 0 y 1
+lo multiplicamos por 10 para que esté entre 0 y 10
+redondeamos hacia abajo para que esté entre 0 y 9
+le sumamos uno para que esté entre 1 y 10
+devolvemos el resultado
+
+Math.random siempre genera un número decimal entre cero y menor que 1
+
+Math.floor redondea los decimales al numero más bajo,
+es decir si es 5.95, le quita los decimales y muestra 5.
+
+a diferencia de Math.ceil que redondea hacia arriba. el resultado
+seria 6.
+*/
+
+/*___________________________________________________________________________________________________*/
+/*___________________________________________________________________________________________________*/
+
+// 20- crea una funcion que reciba dos parametros y puedas usar esa función para sumar dos numeros
+
+function sumar (a,b){
+  return a+b
+}
+console.log(sumar(2,2))
+
+//otra manera de hacerla con arrow function:(llevan el return implicito)
+const sumar = (c,d)=> c+d
+console.log(sumar(1,1))
+
+/*___________________________________________________________________________________________________*/
+/*___________________________________________________________________________________________________*/
+
