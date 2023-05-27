@@ -1,4 +1,4 @@
-<center># Serie de ejercicios Nivel 1 para prácticar para las entrevistas</center>
+# Serie de ejercicios Nivel 1 para prácticar para las entrevistas
 
 // 1-Dado un array de números, escribir una función que encuentre el número más grande.
 
