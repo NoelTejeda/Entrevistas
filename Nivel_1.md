@@ -32,13 +32,12 @@
 
 
 > 13. Dada una lista de números, escribe una función en JavaScript que devuelva la suma de todos los números pares en la lista. La función deberá iterar sobre cada número en la lista, comprobar si el número es par y, si es así, añadirlo a la suma total. Usa el bucle que quieras para solucionarlo. 
-<br>
-`function sumarPares(numeros) {
+<br>function sumarPares(numeros) {
   <br>  let suma = 0 
 <br>// tu código aquí
 <br>return suma}
 
-`
+
 
 > 14. crear un array vacio e insertar los números del 1 al 10
 
