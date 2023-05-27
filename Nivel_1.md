@@ -1,6 +1,6 @@
 
 # Serie de ejercicios Nivel 1 prácticas para las entrevistas
-<image src="https://cronicaglobal.elespanol.com/uploads/s1/78/53/03/6/coding-924920-1920.jpeg" width='380'align='center' alt="escribiendo en laptop" border="5px solid yellow">
+<image src="https://cronicaglobal.elespanol.com/uploads/s1/78/53/03/6/coding-924920-1920.jpeg" width='380' align='center' alt="escribiendo en laptop" border="5px solid yellow">
 
 // 1-Dado un array de números, escribir una función que encuentre el número más grande.</numero>
 
