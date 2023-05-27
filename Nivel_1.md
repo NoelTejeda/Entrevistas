@@ -1,6 +1,6 @@
 # Serie de ejercicios Nivel 1 para prácticar para las entrevistas
 
-// 1-Dado un array de números, escribir una función que encuentre el número más grande.
+<numero> 1. // 1-Dado un array de números, escribir una función que encuentre el número más grande.</numero>
 
 // 2 -dado un array de numeros, escribir una función que sume los todos indices empezando por el indice 2
 
