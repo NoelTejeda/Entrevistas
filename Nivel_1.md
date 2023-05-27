@@ -3,7 +3,8 @@
 <p align='center'>
 <image src="https://cronicaglobal.elespanol.com/uploads/s1/78/53/03/6/coding-924920-1920.jpeg" width='380' alt="escribiendo en laptop" border="5px solid yellow">
 </p>
-// 1-Dado un array de números, escribir una función que encuentre el número más grande.</numero>
+
+// 1-Dado un array de números, escribir una función que encuentre el número más grande.
 
 // 2 -dado un array de numeros, escribir una función que sume los todos indices empezando por el indice 2
 
