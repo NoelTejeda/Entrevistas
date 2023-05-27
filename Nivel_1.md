@@ -1,7 +1,7 @@
 
 <h1 align='center'> Serie de ejercicios Nivel 1 prácticas para las entrevistas</h1>
 <p align='center'>
-<image src="https://cronicaglobal.elespanol.com/uploads/s1/78/53/03/6/coding-924920-1920.jpeg" width='380' alt="escribiendo en laptop" border="5px solid yellow"/>
+<image src="https://cronicaglobal.elespanol.com/uploads/s1/78/53/03/6/coding-924920-1920.jpeg" width='380' alt="escribiendo en laptop" style="border: 5px solid yellow;" />
 </p>
 
 
