@@ -158,6 +158,10 @@ const truncatedText = truncatedResult.length < n ? truncatedResult : `${truncate
 const setOfArray = new Set();
 [1, 1, 1, 1, 2].forEach((n) => setOfArray.add(n))
 
+const numero = [1, 2, 34, 36, 1, 2, 34];
+const setOfArray = new Set();
+numero.forEach((n) => setOfArray.add(n))
+console.log(setOfArray) // 1,2,34,36
 
 /*___________________________________________________________________________________________________*/
 /*___________________________________________________________________________________________________*/
