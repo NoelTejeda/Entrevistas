@@ -163,6 +163,16 @@ const setOfArray = new Set();
 numero.forEach((n) => setOfArray.add(n))
 console.log(setOfArray) // 1,2,34,36
 
+
+
+function eliminarDuplicados(array) {
+  return [...new Set(array)];
+}
+
+const array = [1,1,1,2,2,4,5,6];
+const resultado = eliminarDuplicados(array);
+console.log(resultado); // [1, 2, 4, 5, 6]
+
 /*___________________________________________________________________________________________________*/
 /*___________________________________________________________________________________________________*/
 
