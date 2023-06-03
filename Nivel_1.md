@@ -54,6 +54,6 @@
 
 > 20. crea una funcion que reciba dos parametros y puedas usar esa función para sumar dos numeros
 
+> 21. Rellena un array con números aleatorios (10 por ejemplo). Muéstralo por la consola.
 
-
-
+> 22. 
