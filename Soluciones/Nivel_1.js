@@ -8,12 +8,12 @@ console.log(mayor) //3
 
 
 // otra manera de solucionarlo es utilizando el operador de propagacion directamente al array:
-console.log(Math.max(...[1,2,3]))
+console.log(Math.max(...[1, 2, 3]))
 
 //Otra manera:
 
-const array2 = [1,2,3,4]
-console.log (Math.max(...array2))
+const array2 = [1, 2, 3, 4]
+console.log(Math.max(...array2))
 
 /* se usa el operador de propagación (...) para pasar los elementos del array como argumentos a la función Math.max
 al usar el spread operator estamos expandiendo el array en una lista de argumentos. console.log(Math.max(1, 2, 3));
@@ -38,8 +38,8 @@ const suma = [1, 2, 3, 4].slice(2).reduce((acumulador, valorActual) => acumulado
 console.log(suma);
 
 //otra manera:
-const array1 = [1,2,3,4]
-console.log(array1.slice(2).reduce((acc,act)=>acc+act))
+const array1 = [1, 2, 3, 4]
+console.log(array1.slice(2).reduce((acc, act) => acc + act))
 
 /*
 
@@ -59,7 +59,7 @@ también se puede usar el método splice, pero la diferencia es que este último
 
 // 3-Dado un array de números, escribir una función que calcule la suma de todos los elementos.
 
-console.log([1,2,3,4].reduce((acc,act)=>acc+act))
+console.log([1, 2, 3, 4].reduce((acc, act) => acc + act))
 
 /*si quisiera que empezara a sumar por un número(no indice) que yo quiera se haria así:
 
@@ -76,9 +76,9 @@ console.log([1,2,3,4].reduce((acc,act)=>acc+act,2))
 
 //console.log([1,2,3,4].reduce((acc,act)=>(acc+act)/4)) así no se hace porque está diviendo entre 4 en cada iteración.
 
-const num = [1,2,3,4]
+const num = [1, 2, 3, 4]
 const sum = num.reduce((acc, element) => acc + element);
-console.log(sum /num.length)
+console.log(sum / num.length)
 
 
 
@@ -116,19 +116,19 @@ console.log(str.split(' ', 2)); // ['one', 'two']
 
 // 6-Dado un string, escribir una función que encuentre la palabra más larga en el string.
 const resultLonger = 'hola mundo estoy preparado'
-console.log(resultLonger.split(" ").reduce((acc, act) => 
-(acc.length > act.length ? acc : act)))
+console.log(resultLonger.split(" ").reduce((acc, act) =>
+  (acc.length > act.length ? acc : act)))
 
- /*
- la diferencia de usar
- sin espacio split('') = ["h", "o", "l", "a", " ", "m", "u", ...]
- con espacio split(' ') = ["hola", "mundo", "estoy", "preparad...]
+/*
+la diferencia de usar
+sin espacio split('') = ["h", "o", "l", "a", " ", "m", "u", ...]
+con espacio split(' ') = ["hola", "mundo", "estoy", "preparad...]
  
- ternaria:
- condicion ? cuando es cierto : cuando es falso
- puntaje>6 ? 'pasaste' : 'fallaste'
+ternaria:
+condicion ? cuando es cierto : cuando es falso
+puntaje>6 ? 'pasaste' : 'fallaste'
  
- */
+*/
 /*___________________________________________________________________________________________________*/
 /*___________________________________________________________________________________________________*/
 
@@ -144,10 +144,10 @@ entre corchetes.
 
 /*___________________________________________________________________________________________________*/
 /*___________________________________________________________________________________________________*/
-  
+
 // 8-Dado un string y un número n, escribir una función que trunque el string a n caracteres y agregue "..." al final.
 const n = 5;
-const truncatedResult =  "hola gentleman programming".slice(0, n);
+const truncatedResult = "hola gentleman programming".slice(0, n);
 const truncatedText = truncatedResult.length < n ? truncatedResult : `${truncatedResult}...`
 
 
@@ -169,7 +169,7 @@ function eliminarDuplicados(array) {
   return [...new Set(array)];
 }
 
-const array = [1,1,1,2,2,4,5,6];
+const array = [1, 1, 1, 2, 2, 4, 5, 6];
 const resultado = eliminarDuplicados(array);
 console.log(resultado); // [1, 2, 4, 5, 6]
 
@@ -187,7 +187,7 @@ const cars = ["Saab", "Volvo", "BMW"]
 
 //11- Change the first item of cars1 to "Ford".
 const cars1 = ["Volvo", "Jeep", "Mercedes"]
-cars1[0]='ford'
+cars1[0] = 'ford'
 console.log(cars1)
 
 
@@ -201,12 +201,12 @@ Array de textos separados por cierto caracter,
  devolverá ['hola', 'que', 'tal'].
   */
 
- const cadenaAArreglo = (cadena = "", separador = undefined) =>
- (!cadena)
-   ? console.warn('No ingresaste ninguna cadena de texto')
-   : (separador === undefined)
-     ? console.warn('No ingresaste el caracter separador')
-     : console.info(cadena.split(separador,))
+const cadenaAArreglo = (cadena = "", separador = undefined) =>
+  (!cadena)
+    ? console.warn('No ingresaste ninguna cadena de texto')
+    : (separador === undefined)
+      ? console.warn('No ingresaste el caracter separador')
+      : console.info(cadena.split(separador,))
 
 cadenaAArreglo("lorem22", "")
 
@@ -215,7 +215,7 @@ cadenaAArreglo("lorem22", "")
 
 // 13- Dada una lista de números, escribe una función en JavaScript que devuelva la suma de todos los números pares en la lista. La función deberá iterar sobre cada número en la lista, comprobar si el número es par y, si es así, añadirlo a la suma total. Usa el bucle que quieras para solucionarlo.
 
-let numeros = [1,2,3,4,5]
+let numeros = [1, 2, 3, 4, 5]
 function sumarPares(numeros) {
   let suma = 0;
   for (let i = 0; i < numeros.length; i++) {
@@ -233,12 +233,12 @@ console.log(sumarPares(numeros))
 // 14- crear un array vacio e insertar los números del 1 al 10
 
 let insert = []
- for (let i = 1; i < 11 ; i++){
+for (let i = 1; i < 11; i++) {
   insert.push(i)
- }
- console.log(insert)
+}
+console.log(insert)
 
- /*___________________________________________________________________________________________________*/
+/*___________________________________________________________________________________________________*/
 /*___________________________________________________________________________________________________*/
 
 // 15- dado el siguiente array ['Banana', 'Orange', 'Apple'], agrega el elemento "tomato" en el primer indice
@@ -250,7 +250,7 @@ console.log(add)
 
 
 //El método .unshift() añade un elemento al principio de un array. a diferencia de push que lo agrega al final
- /*___________________________________________________________________________________________________*/
+/*___________________________________________________________________________________________________*/
 /*___________________________________________________________________________________________________*/
 
 // 16- dado el siguiente array ['Banana', 'Orange', 'Apple'], eliminar en último indice y devolver el array nuevo.
@@ -261,7 +261,7 @@ console.log(fruits)
 
 //El método .pop() elimina y devuelve el último elemento de un array:
 
- /*___________________________________________________________________________________________________*/
+/*___________________________________________________________________________________________________*/
 /*___________________________________________________________________________________________________*/
 
 // 17- dado el siguiente array ['Banana', 'Orange', 'Apple'], eliminar el primer indice y devuelvelo, imprime el array original.
@@ -270,13 +270,13 @@ console.log(frutas.shift())
 console.log(frutas)
 
 //El método .shift() elimina y devuelve el primer elemento de un array, mientras que pop elimina el último
- /*___________________________________________________________________________________________________*/
+/*___________________________________________________________________________________________________*/
 /*___________________________________________________________________________________________________*/
 
 // 18- dado el siguiente array ['banana', 'orange', 'apple', 'kiwi'] mostrar los indices 1 y 2 en un solo array
 
 const fruits1 = ['banana', 'orange', 'apple', 'kiwi']
-console.log(fruits1.splice(1,2))
+console.log(fruits1.splice(1, 2))
 
 console.log(fruits1)
 
@@ -286,12 +286,12 @@ console.log(fruits1)
 // 19- Genere números aleatorios del 1 al 10 
 
 function getRandomNumber() {
-  
+
   const random = Math.random() // por ejemplo: 0.6803487380457318
   const multiplied = random * 10 // -> 6.803487380457318
   const rounded = Math.floor(multiplied) // -> 6
   const result = rounded + 1 // -> 7
- 
+
   return result
 }
 console.log(getRandomNumber())
@@ -317,14 +317,14 @@ seria 6.
 
 // 20- crea una funcion que reciba dos parametros y puedas usar esa función para sumar dos numeros
 
-function sumar (a,b){
-  return a+b
+function sumar(a, b) {
+  return a + b
 }
-console.log(sumar(2,2))
+console.log(sumar(2, 2))
 
 //otra manera de hacerla con arrow function:(llevan el return implicito)
-const sumar = (c,d)=> c+d
-console.log(sumar(1,1))
+const sumar = (c, d) => c + d
+console.log(sumar(1, 1))
 
 /*___________________________________________________________________________________________________*/
 /*___________________________________________________________________________________________________*/
@@ -379,3 +379,19 @@ si le multiplicamos 0,1,5 a random, floor tomará:
 5  a  5.99999 ...  ->  5 
  */
 
+/*___________________________________________________________________________________________________*/
+/*___________________________________________________________________________________________________*/
+
+// 22- Dada una lista de números, escribe una función en JavaScript que devuelva la suma de todos los números pares en la lista. La función deberá iterar sobre cada número en la lista, comprobar si el número es par y, si es así, añadirlo a la suma total. Usa el bucle que quieras para solucionarlo.
+
+function sumarPares(numeros) {
+  let suma = 0
+  for (let i = 0; i < numeros.length; i++) {
+    if (numeros[i] % 2 == 0) {
+      suma += numeros[i]
+    }
+  }
+  return suma
+}
+
+console.log(sumarPares([1, 2, 3, 4]))
