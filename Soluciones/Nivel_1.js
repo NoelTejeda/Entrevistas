@@ -111,7 +111,11 @@ const str = 'one two three';
 console.log(str.split(' ')); // ['one', 'two', 'three']
 console.log(str.split(' ', 2)); // ['one', 'two']
 */
+const array1 =['uno', 'dos', 'tres']
+console.log(array1.reverse()) //[ 'tres', 'dos', 'uno' ]
 
+const letras1 = 'esto es un texto' //TypeError: letras1.reverse is not a function
+console.log(letras1.reverse())
 
 /*___________________________________________________________________________________________________*/
 /*___________________________________________________________________________________________________*/
