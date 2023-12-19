@@ -15,6 +15,8 @@ console.log(Math.max(...[1, 2, 3]))
 const array2 = [1, 2, 3, 4]
 console.log(Math.max(...array2))
 
+/* Nota: El método Math.max() no funciona directamente con arrays en JavaScript. Para encontrar el número mayor en un array, necesitas usar el operador de propagación (...) para pasar los elementos del array como argumentos individuales al método Math.max() */  
+
 /* se usa el operador de propagación (...) para pasar los elementos del array como argumentos a la función Math.max
 al usar el spread operator estamos expandiendo el array en una lista de argumentos. console.log(Math.max(1, 2, 3));
 */
